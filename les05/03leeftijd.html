@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const leeftijd = prompt("Wat is je leeftijd?", 18);
+
+        if ( leeftijd >= 18) {
+
+            document.write("<p>Je bent meerderjarig</p>");
+        }
+
+        const wachtwoord = prompt("Wat is je wachtwoord");
+
+        if ( wachtwoord != "JavaScript") {
+
+            document.write("<p>Dit is niet het correcte wachtwoord</p>");
+        }
+
+        const ouderdom = prompt("Wat is je pensieonleeftijd?", 65);
+
+        if ( leeftijd < ouderdom) {
+
+            document.write("<p>Je kan nog niet op pensieon</p>");
+        }
+
+    </script>
+    
+</body>
+</html>

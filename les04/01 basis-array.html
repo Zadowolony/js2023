@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // Maak een nieuwe array met inhoud: Jan, Piet, Joris
+        //Druk de array af in het document
+
+
+        const namen = ["Jan", "Piet", "Joris"];
+
+        const namen2 =  Array("Jan");
+
+        document.write(namen);
+
+        document.write(`<p>${namen2}</p>`);
+
+        //         Maak een array met naam weekdagen
+        // Vul alle dagen van de week in als aparte elementen, begin bij maandag
+        // Druk de array af in het document
+
+        const weekdagen = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag","Zondag"];
+
+        document.write(weekdagen);
+        console.log(weekdagen);
+
+
+
+
+        // Maak een array aan met naam htmlTags
+        // Vul deze op met “html”, “p”, “div”
+        // Druk de array af in het document.
+        // Vraag via een prompt aan de gebruiker of hij nog een tag kent
+        // Voeg deze tag toe achteraan de array
+        // Druk de array opnieuw af in het document.
+
+        let htmlTags = ["html", "p", "div"];
+        let vraag = prompt("Ken je nog een tag?");
+        htmlTags.push(vraag);
+        document.write(`<p>${htmlTags}</p>`);
+
+        // Maak een string met deze inhoud: JavaScript is een scriptingtaal
+        // Split deze string
+        // Druk in het document af hoeveel elementen de array bevat
+
+        const inhoud = "javaScript is een scriptingtaal";
+        const arrayinhoud = inhoud.split("ja");
+
+
+        document.write(`${arrayinhoud.length}`);
+
+//         Maak een array aan met volgende elementen: “JavaScript” en “PHP”
+// Controleer of “javascript” in de array voorkomt en toon het resultaat.
+// Controleer of “JavaScript” in de array voorkomt en toon het resultaat. 
+
+
+        const namen1 = ["JavaScript", "PHP"];
+
+        const foutNaam = namen1.indexOf("javascript");
+        const goedNaam = namen1.indexOf("JavaScript");
+
+        document.write(`<p>${foutNaam} , ${goedNaam}</p>`);
+
+
+
+
+        let cijfers = [1, 2, 3];
+
+
+
+cijfers.push(4);
+
+cijfers.push(5);
+
+document.write(cijfers);
+
+    </script>
+    
+</body>
+</html>

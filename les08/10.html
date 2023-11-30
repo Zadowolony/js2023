@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Definieer de function "product". Deze krijgt 3 argumenten aan. 
+// De function product berekent het product van de 3 argumenten en geeft dit terug.
+
+// Het hoofdscript:
+// Je maakt een variabele uitkomst die de function product oproept en 3 getallen doorgeeft.
+// Deze variabele uitkomst druk je af in de html pagina.
+
+function product(arg1, arg2, arg3){
+
+    const getal = arg1 * arg2 * arg3;
+    return getal;
+}
+
+const score = product(2,2,2);
+document.write(`<p>Dit komt uit de funtie : ${score}</p>`)
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 1
+
+        const maanden = ["Januari", "Februari", "Maart"];
+        maanden[3] = "April";
+        maanden[4] = "Mei";
+        maanden[5] = "Juni";
+        maanden.push("Juli");
+        maanden.push("Augustus", "September", "Oktober", "November", "December");
+
+        document.write(`<p>${maanden}</p>`);
+        document.write(`<p>Er zijn ${maanden.length} maanden in de array</p>`);
+        
+
+        // const controleMaand = maanden.indexOf("March");
+
+        const zoekMaand = prompt("Bevind zich een maand in een array?");
+
+        document.write(`<p>De maand ${zoekMaand} bevindt zich in de array op positie: ${maanden.indexOf(zoekMaand)}</p>`);
+
+
+        // 2
+        
+        const namen = ["Erik", "Sofie", "Adam", "Zorro"];
+
+        namen.sort();
+        document.write(namen);
+
+        
+        const zoekNaam = prompt("Welke naam zoek je?");
+
+
+        document.write(`<p>De naam ${zoekNaam} bevindt zich op positie: ${namen.indexOf(zoekNaam)}</p>`);
+
+        // 3
+
+        
+        const vraagNaam = prompt("Wat je is volldeige naam(voornaam achternaam)");
+        const vraagNaamArray = vraagNaam.split(" ");
+        vraagNaamArray.reverse();
+        vraagNaamArray.join();
+        const vraagNaamString = vraagNaamArray.join(" ");
+
+        document.write(`<p>Jouw naam genoteerd als familienaam voornaam is: ${vraagNaamString}</p>`)
+
+
+
+    </script>
+
+</body>
+</html>

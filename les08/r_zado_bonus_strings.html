@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // 1
+
+        const tekst1 = "Hallo wereld, dit is JavaScript!";
+        const teZoekenTekst = "JavaScript";
+
+        const positie = tekst1.indexOf(teZoekenTekst);
+
+        
+        
+        document.write(`In de tekst ${tekst1} begint de te zoeken tekst '${teZoekenTekst}' op positie ${positie}`);
+
+        // 2
+
+        const postcode = "xxxxx";
+        const woonplaats = "xxxxxx";
+        //dus dit kan ook!! in een variabelen de template literals
+        const tekst = `"Hij woont in de postcode ${postcode}, te ${woonplaats}."`; 
+
+        const postcode_pos = tekst.indexOf(postcode);
+        const woonplaats_pos = tekst.indexOf(woonplaats);
+
+        document.write(`<p> 'Hij woont in de postcode ${postcode}, te ${woonplaats}.' begint '1000' op positie ${postcode_pos} en 'Brussel' op positie ${woonplaats_pos}.</p>`);
+
+
+        document.write(`<p>De gecensureerde zin is dan: Hij woont in de postcode ${postcode}, te ${woonplaats}.</p>`);
+
+
+        // 3 
+
+
+        const tekst3= "JavaScript is de belangrijkste scriptingtaal voor het web. De taal bestaat al sinds 1995 en werd uitgevonden door Brendan Eich voor gebruik in  dewebbrowser Netscape 2.";
+
+        const pos1 = tekst3.indexOf("de");
+
+        // hier hetzelfde ik kan ook een variabele maken en dan in de tweede steken met bewerking
+        const pos2 = tekst3.indexOf("de", pos1 +1);  
+        
+
+        
+       
+
+        document.write(`In de tekst '${tekst3}' staat de tweede 'de' volgens JavaScript op positie ${pos2}.`);
+
+
+    </script>
+    
+</body>
+</html>

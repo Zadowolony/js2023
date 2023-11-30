@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        
+
+        const punten = prompt("Geef jouw punten met 2 cijfers", "88");
+
+        if ( punten == null){
+            document.write("U heeft geannulleerd!")
+        }else if (punten.length == 0){
+            document.write("U heeft niets ingegeven!");
+        }else if (isNaN(punten)){
+            document.write("Dit is geen nummer!");
+        }
+
+        //else if(punten.length<2 || punten.length >2){
+        //     document.write("geef twee cijfers")
+        // }
+
+        // else if (punten.length != 2 && punten != 100) {
+        // document.write("Geef de punten in met 2 cijfers!"); 
+        
+        // }
+
+        // lengte 80 niet is gelijk aan  2 niet waar
+        //80 niet gelijk aan 100 waar
+        // nw || w
+
+
+        
+        
+        else if (punten.length != 2 &&  punten != 100) {
+
+            document.write("Geef de punten in met 2 cijfers!");
+        } 
+
+        else {
+
+        
+            
+            if (punten >= 95){
+                document.write("De graad is: A+");
+            }else if (punten >=90) {
+                document.write("De graad is: A");
+            }else if (punten >=80) {
+                document.write("De graad is: B");
+            }else if (punten >=70) {
+                document.write("De graad is: C");
+            }else if (punten >=60) {
+                document.write("De graad is: D");
+            }else if (punten >=50) {
+                document.write("De graad is: E");
+            } else {
+                document.write("De graad is:F");
+            }
+        }
+
+        
+        
+
+    </script>
+    
+</body>
+</html>

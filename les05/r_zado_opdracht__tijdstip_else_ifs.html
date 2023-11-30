@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // hoe vraag ik aan computer de uur op
+
+        const date = new Date();
+        const hours = date.getHours();
+
+        
+
+        if ( hours >= 0 && hours <= 7){  // had hours <= 0
+            text = "Goeienacht";
+        }else if ( /*hours > 7 &&*/ hours <= 11 ){ // ik heb hier dus twee voorwaareden gedaan waarvan het niet moet omdat ik al boven het gedaan had dus ga al van 8 tot 11 hier uitkomen
+            text = "Goeiemorgen";
+        }else if ( /*hours > 11 &&*/ hours <= 18){
+            text = "Goeiemiddag";
+        }else   {
+            text = "Goeieavond";
+        }
+
+        document.write(`<p>Het is nu ${hours} uur</p>`);
+        document.write(`${text}`);
+
+        
+        
+        
+        
+
+        
+
+    </script>
+    
+</body>
+</html>

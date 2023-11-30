@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const radius1 = prompt("Wat is de radius van de cylinder");
+        const hoogte1 = prompt("Wat is de hoogte van de cylinder");
+        const decimalen1 = prompt("Geef aandal cijfers na de komma");
+
+        const volume1 = parseFloat( 3.1415 * radius1 * radius1 * hoogte1);
+
+        const radius2 = prompt("Wat is de radius van de cylinder");
+        const hoogte2 = prompt("Wat is de hoogte van de cylinder");
+        const decimalen2 = prompt("Geef aandal cijfers na de komma");
+
+        const volume2 = 3.1415 * radius2 * radius2 * hoogte2;
+
+        
+        const samen = volume1 + volume2;
+
+        // document.write(`<p>Het volume van de eerste cylinder met radius ${radius1} en hoogte ${hoogte1} en aantal decimalen ${decimalen1} is: ${volume1.toFixed(decimalen1)}</p>`);
+
+        // document.write(`<p>Het volume van de eerste cylinder met radius ${radius2} en hoogte ${hoogte2} en aantal decimalen ${decimalen2} is: ${volume2.toFixed(decimalen2)}</p>`);
+
+        // document.write(`<p>Samen is dit een naar onder afgerond van ${samen.toFixed(0)}</p>`);
+
+
+
+
+        document.write(`Voor de eerste cilinder met radius ${radius1} en hoogte ${hoogte1} en aantal decimalen ${decimalen1} geeft dit omgezet: ${parseFloat(radius1).toFixed(decimalen1)} en ${parseFloat(hoogte1).toFixed(decimalen1)}. Het volume is dan : ${parseFloat(volume1).toFixed(decimalen1)}`);
+        
+    </script>
+    
+</body>
+</html>5

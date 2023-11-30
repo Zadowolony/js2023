@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+// Vraag 2 keer een getal aan de gebruiker.
+// Maak een variabele en vul die op met een functieoproep, geef de 2 getallen mee.
+// In de functie controleer je of het eerste ontvangen getal kleiner, gelijk of groter is dan het tweede ontvangen getal. Return 1 van deze mogelijkheden:
+// kleiner dan
+// gelijk aan
+// groter dan
+// In het hoofdscript schrijf je bv.
+// 2 is kleiner dan 5
+
+        const getal1 = prompt("Geef de eerste getal");
+        const getal2 = prompt("Geef het tweede getal");
+
+        const uitkomst = tweeGetallen(getal1,getal2);
+
+        document.write(`<p>${getal1} is ${uitkomst} ${getal2}</p>`);
+
+        function tweeGetallen(g1, g2){
+
+            if ( g1 > g2){
+                return "kleiner dan"
+            }
+            else if ( g1 == g2){
+                return "gelijk aan"
+            }else {
+                return "groter dan"
+            }
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

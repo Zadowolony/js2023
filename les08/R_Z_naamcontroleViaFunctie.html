@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const voornaam = prompt("Wat is je voornaam ?");
+        voornaam = controle(voornaam);
+
+       
+
+       
+        
+        
+
+        // wij kunnen 1 argument maken en dan door template litterate alle twee opsommen
+
+        function controle(geef_in) {
+
+            if (geef_in == null) {
+                document.write("Het is Geannuleerd");
+                return false
+            } else if (geef_in == 0 ) {
+                document.write("Er is niets ingegeven");
+                return false
+            } else if (geef_in.length < isNaN ) {
+
+                document.write("Er zijn minder dan twee karakters ingevuld");
+                return false
+
+            } else if(geef_in) {
+
+                return geef_in.charAt(0).toUpperCase() + geef_in.slice(1);
+
+            }
+           
+        }
+
+
+     
+
+       
+
+        if ( voornaam !== false){
+
+            const achternaam = prompt("Wat is je achternaam");
+
+            achternaam = controle(achternaam);
+            
+    
+            if(achternaam !== false){
+                document.write(`<p>Hey ${voornaam} ${achternaam}</p> `);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

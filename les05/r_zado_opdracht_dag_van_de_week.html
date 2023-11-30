@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const nieuwe_dag = new Date();
+        let dag = nieuwe_dag.getDay();
+
+
+        const dagBenamingen = ["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag" ];
+
+
+        
+
+        if ( dag >=1 && dag <= 5) {
+
+            document.write(`<p>Vandaag is ${dagBenamingen[dag]}</p>`);
+            document.write(`Het is een werkdag, aan de slag dus.`);
+
+        }else {
+
+            document.write(`<p>Vandaag is ${dagBenamingen[dag]}</p>`);
+            document.write(`<p>Het is weekend, even bekomen.</p>`);
+        }
+
+
+    </script>
+    
+</body>
+</html>

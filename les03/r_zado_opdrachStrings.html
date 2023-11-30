@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        //  1
+        const voornaam = "Java";
+        const achternaam = "Script";
+
+        const vollenaam = voornaam + " " + achternaam;
+
+        document.write(`<p>Hallo ${voornaam} ${achternaam}.</p>`);
+
+        //  2
+
+
+        const naam_lengte = voornaam.length + achternaam.length;
+        document.write(`<p>Jouw naam bevat ${naam_lengte} karakters.</p>`);
+
+        //  3
+
+        let filename = "javaScriptFrameWork";   //let veranderd omv de verandering later in d  code
+        document.write(`<p>De originele filename is: '${filename}'</p>`);
+
+        //  4
+
+        filename = filename.toLowerCase();
+        document.write(`<p>De filename kan beter in kleine letters getypt worden, dus: '${filename}'</p>`);
+
+        //  5
+
+        const filename_devide1 = filename.substring(0, 10);
+        const filename_devide2 = filename.substring(10, 19);
+
+
+        document.write(`<p>Als je 'javascriptframework' opsplitst, krijg je : '${filename_devide1}' '${filename_devide2}'</p>`);
+
+        //  6
+
+
+        const een_karakter = filename.charAt(5);
+        document.write(`<p>Het zesde karakter (volgens mensen) in '${filename}' is: '${een_karakter}'</p>`);
+
+        //  7
+
+        const email = "jan.klaassen@mail.com"
+        const teken = email.indexOf("@");
+
+        document.write(`<p>In '${email}' staat de @ op positie: ${teken}</p>`);
+
+        // 8
+
+        const naam_opvraag = email.substring(0, email.indexOf("@"));
+
+        document.write(`<p>${naam_opvraag}</p>`);
+
+        // 9 
+
+        const lange_tekst = "Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()."
+
+        const knip_tekst = lange_tekst.substr(0, 8);
+
+        document.write(`<p>De orginele tekst: '${lange_tekst}' wordt dan: '${knip_tekst}'</p>`);
+
+    </script>
+
+</body>
+</html>

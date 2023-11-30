@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // let geboortejaar;
+        // let hoe_oud;
+        // let aantal_koffie;  // later op te roepen in een if statement waar wij in de eerste functie niet moeten aantrekken hoe wij de variabelen eruitnemen om dan met de tweede functie in te zetten en dus if statement kan uit de lus
+
+        
+            const ingeven = () => {
+
+                const geboortejaar = prompt("Wat is je geboortejaar?");
+                const hoe_oud = prompt("Hoe oud word je?");
+                const aantal_koffie = prompt("Hoeveel koffie drink je per dag");
+
+                if (geboortejaar == null || hoe_oud == null || aantal_koffie == null || geboortejaar === "" || hoe_oud === "" || aantal_koffie === "" || isNaN(geboortejaar) || isNaN(hoe_oud) || isNaN(aantal_koffie)) {
+
+                    document.write("Er is een fout opgetreden tijdens het invullen");
+                } else {
+
+                    tonen(geboortejaar, hoe_oud, aantal_koffie); // hier geef ik deze waarden door naar functie tonen();
+       
+                }               
+            }
+
+
+
+            const tonen = (geboortejaar, hoe_oud, aantal_koffie) => {
+
+                const deze_jaar = new Date().getFullYear();
+                const leeftijd = deze_jaar - geboortejaar;
+                const overblijvende_jaren = hoe_oud - leeftijd;  // dus verwachte leeftijd - mijn huidige leeftijd.
+                const max_koffie = overblijvende_jaren * 365 * aantal_koffie;
+
+                document.write(`Je bent nu ${leeftijd} jaar oud. Tegen ${aantal_koffie} koppen koffie per dag zal je ${max_koffie} koppen koffie drinken als je ${hoe_oud} jaar oud zal worden.`);
+            }
+
+
+            // functie moet opgeroepen worden , als eerste om daarna de if statement uit te roepen, dus wij zeggen dat eerst de prompt komt daarna de controle!
+
+            ingeven();
+
+                //             if (geboortejaar == null || hoe_oud == null || aantal_koffie == null || geboortejaar === "" || hoe_oud === "" || aantal_koffie === "" || isNaN(geboortejaar) || isNaN(hoe_oud) || isNaN(aantal_koffie)) {
+
+                // document.write("Er is een fout opgetreden tijdens het invullen");
+                // } else {
+
+                // tonen(geboortejaar, hoe_oud, aantal_koffie); // hier geef ik deze waarden door naar functie tonen();
+
+                // }
+
+
+        
+
+    </script>
+    
+</body>
+</html>

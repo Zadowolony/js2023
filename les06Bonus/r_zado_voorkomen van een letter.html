@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // Ascii tabel is gegeven tabel
+        // charCodeAt() : van string naar getal(integer)
+        //String.fromCharCode() : from utf 16 code (getallen terug anar een string) 
+
+        // Letter a komt 4 keer voor.
+        // dus in eerste loop moeten wij weten hoeveel letters er daar voorkomen
+
+        
+        let zin = "Tel het aantal keer dat elke letter voorkomt in deze tekst";
+        let lengte = zin.length;
+        let tellerArray = new Array(26);
+
+        // zin.toLowerCase = zin.toUpperCase;
+
+        for(let i = 0; i < lengte; i++){
+
+             let karakter = zin[i].toLowerCase();
+
+             if( karakter >= "a" && karakter <= "z") {
+
+                const index = karakter.charCodeAt(0) - "a".charCodeAt(0);
+                tellerArray[index]++;                  
+                
+             }
+
+             
+            }
+
+        
+        for(let i = 0; i < zin.length; i++){
+             
+           
+             
+            }
+
+            
+            
+            
+            
+
+           
+
+            
+
+
+
+    </script>
+    
+</body>
+</html>

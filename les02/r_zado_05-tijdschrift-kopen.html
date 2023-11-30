@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       
+       const naamTijdschrift = prompt("Wat is de naam van de tijdschrift.?");
+       const kostPrijs = prompt("Wat is de kostprijs van deze tijdschrift?");
+       const aantal = prompt("Hoeveel stuks koop je?");
+
+      
+
+       const totaal = kostPrijs * aantal;
+      
+
+       document.write(`<p>Het tijdschrift is: ${naamTijdschrift} en het type hiervan is ${typeof naamTijdschrift}</p>`);
+
+       document.write(`<p>De kostprijs van 1 exemplaar is €${kostPrijs}, het type hiervan is ${typeof kostPrijs}</p>`);
+
+       document.write(`<p>Het aantal exemplaren dat je wil kopen is: ${aantal}, het type hiervan is ${typeof aantal}</p>`);
+
+       document.write(`<p>De totale prijs is dan €${totaal.toFixed(2)}</p>`);
+
+    </script>
+
+</body>
+</html>

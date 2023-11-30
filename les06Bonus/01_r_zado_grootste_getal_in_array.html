@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const getallen = [30,410,10,490];
+        let grootsteGetal = getallen[0];
+        let positie = 0;
+
+        
+
+        for(let i = 1; i < getallen.length; i++){
+            if(getallen[i] > grootsteGetal){
+                
+                grootsteGetal = getallen[i]
+                positie = i;
+            }
+           
+        }
+        
+        document.write(`Het grootste getal: ${grootsteGetal} staat in de array op de plaats: ${positie}`);
+
+       
+    </script>
+    
+</body>
+</html>
